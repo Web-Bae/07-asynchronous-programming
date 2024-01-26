@@ -32,9 +32,13 @@ async function getAndDisplayNewQuote() {
 }
 
 async function addQuote() {
-  const quoteInputElement = document.querySelector("#add-quote-input");
-  const quote = quoteInputElement.value;
-  const data = await postNewQuote(quote);
-  console.log(data);
-  quoteInputElement.value = "";
+  try {
+    const quoteInputElement = document.querySelector("#add-quote-input");
+    const quote = quoteInputElement.value;
+    const data = await postNewQuote(quote);
+    console.log(data);
+    quoteInputElement.value = "";
+  } catch (error) {
+    console.error("Error:", error);
+  }
 }
