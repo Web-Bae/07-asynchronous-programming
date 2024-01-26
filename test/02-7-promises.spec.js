@@ -19,16 +19,6 @@ describe("Promises", () => {
 
   // Testing Promise Hell
   it("should test for the function to be logged in order: 'Data fetched!' 'Data processed!' 'Data displayed'", (done) => {
-    // Chain promises to ensure execution order
-    // convert setTimeout to a promise
-    const setTimeoutPromise = (delay) => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          resolve();
-        }, delay);
-      });
-    };
-
     setTimeout(() => {
       // Assertions
       expect(logSpy.calls.allArgs()).toEqual([
