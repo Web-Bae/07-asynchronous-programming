@@ -1,8 +1,8 @@
-import { POST_API_URL } from "./constants.js";
+import { API_URL } from "./constants.js";
 
 export async function postNewQuote(quote) {
   try {
-    const response = await fetch(POST_API_URL, {
+    const response = await fetch(API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

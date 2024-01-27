@@ -1,8 +1,8 @@
-import { GET_API_URL } from "./constants.js";
+import { API_URL } from "./constants.js";
 
 export async function fetchQuotes() {
   try {
-    const response = await fetch(GET_API_URL);
+    const response = await fetch(API_URL);
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
