@@ -1,4 +1,4 @@
-import { API_URL } from "./constants.js";
+import { API_URL } from "https://cdn.jsdelivr.net/gh/Web-Bae/07-asynchronous-programming@0/src/webflow/constants.js";
 
 export async function fetchQuotes() {
   try {

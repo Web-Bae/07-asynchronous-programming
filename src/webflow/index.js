@@ -1,5 +1,5 @@
-import { postNewQuote } from "./postNewQuote.js";
-import { fetchQuotes } from "./fetchQuotes.js";
+import { postNewQuote } from "https://cdn.jsdelivr.net/gh/Web-Bae/07-asynchronous-programming@0/src/webflow/postNewQuote.js";
+import { fetchQuotes } from "https://cdn.jsdelivr.net/gh/Web-Bae/07-asynchronous-programming@0/src/webflow/fetchQuotes.js";
 
 async function init() {
   await getAndDisplayNewQuote();
